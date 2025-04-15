@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="assets/css/font-awesome/all.min.css">
     <link rel="stylesheet" href="assets/css/slick-slider/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick-slider/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup/main.scss">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <!--preloader start-->
+    <div class="preloader">
+        <i class="fa-spinner fa-puls"></i>
+    </div>
     <!--Header starts-->
     <header>
         <div class="header-left">
@@ -17,10 +23,10 @@
             <nav>
                 <ul>
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Hero</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Gallery</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#hero">Hero</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Our Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
                 <div class="left-signup">
                     <a href="#">Log In</a> <span>or</span> <a href="#">Register</a>
@@ -75,18 +81,162 @@
         </div>
 
     </section>
-    <!--Slider stars-->
+    <!--Slider end-->
+    <!--About section start-->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Us</h2>
+        </div>
+        <div class="content">
+            <div class="video-wrapper">
+                <a class="about-us" href="https://www.youtube.com/watch?v=PND1P2WQUBE">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+            <div class="text">
+                <h2>About us</h2>
+                <h5>Developer & DEsigner</h5>
+                <p>Voluptatibus neque dolore repellendus iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, culpa?</p>
+                <a href="">Know More</a>
+            </div>
+        </div>
 
+    </section>
+    <!--About section end-->
+
+    <!--Gallery Section start-->
+    <section id="gallery">
+        <div class="section-title">
+            <h2>Our Gallery</h2>
+        </div>
+        <div class="content">
+            <div class="gallery-wrapper">
+                <div class="single-image">
+                    <a class=".gl-image-link" href="assets/img/gallery/gallery_5.jpg">
+                        <img src="assets/img/gallery/gallery_5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="single-image">
+                    <a class=".gl-image-link"  href="assets/img/gallery/gallery_2.jpg">
+                        <img src="assets/img/gallery/gallery_2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="single-image">
+                    <a class=".gl-image-link"  href="assets/img/gallery/gallery_3.jpg">
+                        <img src="assets/img/gallery/gallery_3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Gallery Section End-->
+
+    <!--Contact section start-->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="content">
+            <div class="form-wrapper">
+                <form action="#">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" placeholder="Enter Your First Name"><br>
+                    <label for="fname">Last Name</label><br>
+                    <input type="text" id="fname" placeholder="Enter Your Last Name"><br>
+                    <label for="fname">Email Address</label><br>
+                    <input type="email" id="fname" placeholder="Enter Your Email"><br>
+                    <label for="fname">Password</label><br>
+                    <input type="password" id="fname" placeholder="Enter Your Password"><br>
+                    <label for="cars-name">Choose a Car</label><br>
+                    <select name="" id="cars-name">
+                        <option value="">Choose a Car</option>
+                        <option value="">Toyota</option>
+                        <option value="">BMW</option>
+                        <option value="">Volvo</option>
+                    </select><br>
+
+                    <label for="message">Write a message</label><br>
+                    <textarea name="message" id="message" cols="30" rows="3"></textarea><br>
+                    <input type="submit" value="Sand Message">
+                    <input type="reset" value="reset">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Contact section end-->
  </main>
 
-
  <footer>
+    <div id="footer">
+        <div class="main-content">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, et.</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-solid fa-location-dot"></span>
+                        <span class="text">Barisal, Bangladesh</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">017245712452</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">demo@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                    <form action="">
+                        <div class="email">
+                            <label for="email" class="text">Email</label>
+                            <input id="email" type="email" required="">
+                        </div>
+                        <div class="msg">
+                            <label for="message" class="text">Message</label>
+                            <textarea id="message" name="text" rows="2" cols="20" required=""></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Sand</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <span class="credit">Created By <a href="#">Hasan</a>|</span>
+            <span class="far fa-copyright"></span><span>2025 all right reserved.</span>
+        </div>
+        
+    </div>
     
  </footer>
+
+ <!--SCROLL TO TOP-->
+
+ <button type="button" id="scrollToTop" class="scroll-top">
+    <i class="fa-solid fa-arrow-up"></i>
+ </button>
 
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
 </body>
 </html>
